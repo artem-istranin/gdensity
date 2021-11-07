@@ -8,7 +8,7 @@ Available trajectory mean estimators:
 - **Pinsker estimator** (where for the nonperiodic functions the folding strategy is implemented)
 - **Wavelet estimator** (where zero and folding extensions and boundary corrected wavelets are implemented to estimate compact trajectory)
 
-TODO: plots
+![alt text](https://github.com/artem-istranin/gdensity/blob/master/kernel_pinsker_wavelet_example.png)
 
 TODO: code examples
 
