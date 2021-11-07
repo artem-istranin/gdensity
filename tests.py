@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import time
 import os
 
+
 class Generators(object):
     """"Class for generation of all examples and simulations"""
 

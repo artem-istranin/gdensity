@@ -513,7 +513,6 @@ class GaussianTrajectoryDensity(BaseEstimator):
     """
 
     def __init__(self, estimation_algorithm='pinsker', gamma=1e-05, pdf_supp_min=None, pdf_supp_max=None):
-        # TODO: docstring
         self.gamma = gamma
         self.pdf_supp_min = pdf_supp_min
         self.pdf_supp_max = pdf_supp_max
