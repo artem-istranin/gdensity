@@ -45,7 +45,8 @@ ax.plot(X_plot[:, 0], pte_dens, label="Pinsker estimator")
 
 # wavelet trajectory estimator:
 wte = GaussianTrajectoryDensity(estimation_algorithm='wavelet',
-                                pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(X, db_order=4, resolution=3)
+                                pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(
+                                  X, db_order=4, resolution=3)
 wte_dens = [wte.score_density_value(t) for t in X_plot]
 ax.plot(X_plot[:, 0], wte_dens, label="Wavelet estimator\n(order 4, resolution 3)")
 
