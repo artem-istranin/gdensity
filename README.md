@@ -20,7 +20,8 @@ from gdensity.estimators import GaussianTrajectoryDensity
 # Plot a density estimation example
 N = 100
 np.random.seed(1)
-X = np.concatenate((np.random.normal(0, 1, int(0.3 * N)), np.random.normal(5, 1, int(0.7 * N))))[:, np.newaxis]
+X = np.concatenate((np.random.normal(0, 1, int(0.3 * N)),
+                    np.random.normal(5, 1, int(0.7 * N))))[:, np.newaxis]
 supp = [-5, 10]
 X_plot = np.linspace(supp[0], supp[1], 1000)[:, np.newaxis]
 
@@ -37,13 +38,14 @@ kde_dens = np.exp(kde.score_samples(X_plot))
 ax.plot(X_plot[:, 0], kde_dens, label="Kernel estimator\n(Epanechnikov kernel)")
 
 # pinsker trajectory estimator:
-pte = GaussianTrajectoryDensity(estimation_algorithm='pinsker', pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(X)
+pte = GaussianTrajectoryDensity(estimation_algorithm='pinsker',
+                                pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(X)
 pte_dens = [pte.score_density_value(t) for t in X_plot]
 ax.plot(X_plot[:, 0], pte_dens, label="Pinsker estimator")
 
 # wavelet trajectory estimator:
-wte = GaussianTrajectoryDensity(estimation_algorithm='wavelet', pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(
-    X, db_order=4, resolution=3)
+wte = GaussianTrajectoryDensity(estimation_algorithm='wavelet',
+                                pdf_supp_min=supp[0], pdf_supp_max=supp[1]).fit(X, db_order=4, resolution=3)
 wte_dens = [wte.score_density_value(t) for t in X_plot]
 ax.plot(X_plot[:, 0], wte_dens, label="Wavelet estimator\n(order 4, resolution 3)")
 
