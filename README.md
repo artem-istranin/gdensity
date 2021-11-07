@@ -5,8 +5,8 @@ This project implements nonparametric density estimation using the asymptotic eq
 - estimate the corresponding mean of a trajectory of a Gaussian with noise model.
 
 Available trajectory mean estimators:
-- Pinsker estimator (where for the nonperiodic functions the folding strategy is implemented)
-- Wavelet estimator (where zero and folding extensions and boundary corrected wavelets are implemented to estimate compact trajectory)
+- **Pinsker estimator** (where for the nonperiodic functions the folding strategy is implemented)
+- **Wavelet estimator** (where zero and folding extensions and boundary corrected wavelets are implemented to estimate compact trajectory)
 
 TODO: plots
 
