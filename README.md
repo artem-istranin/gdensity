@@ -54,8 +54,6 @@ ax.set_ylim(-0.02, 0.4)
 plt.show()
 ```
 
-TODO: code examples
-
 ## References
 - [1] D. Blackwell. “Comparison of Experiments”. In: 1951.
 - [2] C. Blatter. “Wavelets: A Primer”. In: 1999.
