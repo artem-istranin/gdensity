@@ -56,6 +56,16 @@ ax.set_ylim(-0.02, 0.4)
 plt.show()
 ```
 
+### More examples of density estimation using asymptotic equivalence
+![alt text](https://github.com/artem-istranin/gdensity/blob/master/bimodal_pdf_estimators.png)
+![alt text](https://github.com/artem-istranin/gdensity/blob/master/truncnorm_pdf_estimators.png)
+
+### Examples of available wavelets
+https://github.com/artem-istranin/gdensity/blob/master/db_scaling_functions_and_wavelets.png
+
+### Examples of available boundary-corrected wavelets
+https://github.com/artem-istranin/gdensity/blob/master/bc_db2.png
+
 ## References
 - [1] D. Blackwell. “Comparison of Experiments”. In: 1951.
 - [2] C. Blatter. “Wavelets: A Primer”. In: 1999.
