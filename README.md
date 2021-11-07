@@ -1,12 +1,12 @@
 # Asymptotic equivalence of the density estimation problem and Gaussian white noise model
 
-This project presents nonparametric desity estimator, where we are using the asymptotic equivalence of a nonparametric density estimation problem to a Gaussian white noise model. The construction can be described in two steps:
+This project implements nonparametric density estimation using the asymptotic equivalence of a nonparametric density estimation problem to a Gaussian white noise model. The construction can be described in two steps:
 - construction of observations in sample space of continuous trajectories of stochastic process defined on supp(f) from given samples in the initial space that corresponds to the given estimation problem,
 - estimate the corresponding mean of a trajectory of a Gaussian with noise model.
 
 Available trajectory mean estimators:
 - Pinsker estimator (where for the nonperiodic functions the folding strategy is implemented)
-- Wavelet estimator (where boundary corrected wavelets and zero and folding extensions are implemented to estimate compact trajectory)
+- Wavelet estimator (where zero and folding extensions and boundary corrected wavelets are implemented to estimate compact trajectory)
 
 TODO: plots
 
