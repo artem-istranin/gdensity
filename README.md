@@ -62,7 +62,7 @@ plt.show()
 See code for plot above in `tests.visualize_truncnorm_pdf_estimators`
 
 ![alt text](https://github.com/artem-istranin/gdensity/blob/master/bimodal_pdf_estimators.png)
-See code for plot above in `tests.tests.visualize_bimodal_pdf_estimators`
+See code for plot above in `tests.visualize_bimodal_pdf_estimators`
 
 ### Examples of available wavelets
 https://github.com/artem-istranin/gdensity/blob/master/db_scaling_functions_and_wavelets.png
